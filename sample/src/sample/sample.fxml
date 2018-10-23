@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <ToggleButton layoutX="14.0" layoutY="152.0" mnemonicParsing="false" text="ToggleButton" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" />
+            <Slider layoutX="112.0" layoutY="171.0" />
+             <toggleGroup>
+                 <ToggleGroup fx:id="ToggleGrop" />
+             </toggleGroup></RadioButton>
+            <RadioButton layoutX="398.0" layoutY="169.0" mnemonicParsing="false" text="U" toggleGroup="$ToggleGrop" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="200.0">
+             <RadioButton layoutX="428.0" layoutY="170.0" mnemonicParsing="false" text="D" toggleGroup="$ToggleGrop" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="180.0" />
+            <RadioButton layoutX="447.0" layoutY="169.0" mnemonicParsing="false" text="S" toggleGroup="$ToggleGrop" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="160.0" />
+            <RadioButton layoutX="475.0" layoutY="169.0" mnemonicParsing="false" text="K" toggleGroup="$ToggleGrop" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="140.0" />
+            <Slider layoutX="512.0" layoutY="38.0" orientation="VERTICAL" />
+            <Slider layoutX="43.0" layoutY="122.0" prefHeight="14.0" prefWidth="448.0" />
+            <Slider layoutX="43.0" layoutY="93.0" prefHeight="14.0" prefWidth="448.0" />
+            <Slider layoutX="43.0" layoutY="65.0" prefHeight="14.0" prefWidth="448.0" />
+            <Slider layoutX="40.0" layoutY="31.0" prefHeight="14.0" prefWidth="448.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
